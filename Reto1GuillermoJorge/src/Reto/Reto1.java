@@ -22,6 +22,8 @@ public class Reto1 {
 			opcion = Integer.parseInt(sc.nextLine());
 			int x;
 			int y;
+			
+			double d;
 			switch (opcion) {
 
 			case 1:
@@ -76,14 +78,14 @@ public class Reto1 {
 				System.out.println("");
 				break;
 			case 7:
-				y=Funciones.dimeEntero("Dime numero", sc);
-				System.out.println(Funciones2.esPositivo(y));
+				d=Funciones.dimeDouble("Dime numero", sc);
+				System.out.println(Funciones2.esPositivo(d));
 				System.out.println("");
 				break;
 
 			case 8:
-				y=Funciones.dimeEntero("Dime numero", sc);
-				System.out.println(Funciones2.esNegativo(y));
+				d=Funciones.dimeDouble("Dime numero", sc);
+				System.out.println(Funciones2.esNegativo(d));
 				System.out.println("");
 				break;
 			case 0:
