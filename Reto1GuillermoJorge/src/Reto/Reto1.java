@@ -43,19 +43,36 @@ public class Reto1 {
 				System.out.println("");
 				break;
 			case 4:
-				x=Funciones.dimeEntero("Dime numero", sc);
-				y=Funciones.dimeEntero("Dime numero", sc);
-				System.out.println(Funciones2.dividir(x, y));
-				System.out.println("");
+
+				x=Funciones.dimeEntero("Dime dividendo", sc);
+
+				while (true) {
+					y=Funciones.dimeEntero("Dime divisor", sc);
+					if (y!=0) {
+						System.out.println(Funciones2.dividir(x, y));
+						System.out.println("");
+						break;
+					}
+					System.out.println("No se puede dividir entre 0");
+
+				}
+
 				break;
 			case 5:
 				y=Funciones.dimeEntero("Dime numero", sc);
-				System.out.println(Funciones1.esPar(y));
+				if (Funciones1.esPar(y)) {
+					System.out.println("Es par");
+				}
+				System.out.println("Es impar");
 				System.out.println("");
+
 				break;
 			case 6:
 				y=Funciones.dimeEntero("Dime numero", sc);
-				System.out.println(Funciones1.esImpar(y));
+				if (Funciones1.esImpar(y)) {
+					System.out.println("Es par");
+				}
+				System.out.println("Es impar");
 				System.out.println("");
 				break;
 			case 7:

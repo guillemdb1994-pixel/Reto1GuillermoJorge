@@ -5,6 +5,7 @@ public class Funciones2 {
 			return x*y;
 	}
 	public static double dividir(double x,double y) {
+
 		return x/y;
 	}
 	public static boolean esPositivo(double x) {
