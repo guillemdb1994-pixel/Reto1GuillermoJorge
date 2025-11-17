@@ -13,7 +13,7 @@ public class Funciones2 {
 		}
 		return false;
 	}
-	public boolean esNegativo(double x) {
+	public static boolean esNegativo(double x) {
 		if (x<0) {
 			return true;
 		}
